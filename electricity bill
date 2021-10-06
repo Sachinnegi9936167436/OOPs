@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int unit,charge,i,n;
+char name[100];
+cout<<"Enter the number of users : ";
+cin>>n;
+for(i=0;i<n;i++)
+{
+cout<<"Enter the name : ";
+cin>>name;
+cout<<"Enter the unit : ";
+cin>>unit;
+if(unit<=100)
+{
+charge=unit*60;
+}
+else if(unit<200)
+{
+int a;
+a=unit-100;
+charge=100*60+a*80;
+}
+else if(unit>300)
+{
+int b=unit-300;
+charge=100*60+200*80+b*90;
+charge=((charge*3)/20)+50;
+}
+cout<<"Name of user : "<<name<<endl;
+cout<<"Total bill for unit : "<<charge;
+cout<<endl;
+}
+return 0;
+}
