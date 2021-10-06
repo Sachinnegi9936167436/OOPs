@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class A
+{
+public:
+int x;
+int display()
+{
+return y;
+}
+private:
+int y=10;
+protected:
+int z=55;
+};
+class B:public A
+{
+int show()
+{
+return z;
+}
+};
+int main()
+{
+A obj;
+B obj1;
+cout<<"Enter the value of x : ";
+cin>>obj.x;
+cout<<"Value of X : "<<obj.x<<endl;
+cout<<"Value of Y : "<<obj.display()<<endl;
+cout<<"Value of Z : "<<obj1.show();
+return 0;
+}
