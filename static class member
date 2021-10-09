@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class Base
+{
+public:
+int x;
+static int y;
+}b1,b2;
+int Base::y;
+
+
+int main()
+{
+b1.x=10;
+Base::y=20;
+b2.x=30;
+b2.y=40;
+cout<<b1.x<<endl<<b1.y<<endl<<b2.x<<endl<<b2.y<<endl;
+return 0;
+}
